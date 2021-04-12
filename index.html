@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title> Michael's journal</title>
         <link rel="icon" href = "https://www.clipartmax.com/png/middle/173-1736801_favicon-logo.png">
     </head>
-    <main>
+
+    <body>
         <header>
             <h1> <strong>Michael's journal for the last 3 days</strong> </h1>
         </header>
-        <body>
+        <main>
+        </main>
             <section>
                 <div>
                     <h2> 4/09/2021 Friday </h2>
                     <p> Today I watched a video where the <strong>  Pillow man </strong> duels kids with <b> epic </b> music </p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/fet2BHtWBsk" 
-                    title="YouTube video player" frameborder="0" >
+                    title="YouTube video player">
                     </iframe>
                     <ol>
                         <li> Don't worry, no one was hurt in that video </li>
@@ -26,22 +28,17 @@
 
             <hr>
 
-            <section> 
-                <span>
-                    <h2> 4/10/2021 Saturday </h2>
-                    <p> I got <em> Rick Rolled </em> by my <i> friend </i> </p>
-                    <audio
-                        controls
-                        src = "https://demo.twilio.com/docs/classic.mp3">
-                    </audio>
-                    <nav>
-                        <ul>
-                            <li> <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click here </a> </li>
-                            <li> <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> But also click here </a> </li>
-                        </ul>
-                    </nav>
-                </span>
-            </section>
+                <h2> 4/10/2021 Saturday </h2>
+                <p> I got <em> Rick Rolled </em> by my <span></span> <i> friend </i> </p>
+                <audio controls>
+                    <source src = "https://demo.twilio.com/docs/classic.mp3">
+                </audio>
+                <nav>
+                    <ul>
+                        <li> <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Click here </a> </li>
+                        <li> <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> But also click here </a> </li>
+                    </ul>
+                </nav>
 
             <hr>
 
@@ -52,29 +49,27 @@
                     src = "https://pbs.twimg.com/media/Eyvay3CUcAU1xH2?format=jpg&name=4096x4096"
                     alt = "Cloud9 hoisting the trophy after their win"
                     height = 400>
+
                 <details>
-                    <summary> Details </summary>
+                    <summary> Details 
                         Cloud9 won games 2, 4, and 5 <br>
                         It is the organization's 4th time winning 
+                    </summary>
                 </details>
             </section>
-        </body>
-        <footer>
-            <form action="">
-                <div>
-                    <label for="name">Enter the data: </label>
-                    <input type="date" name="date" id="date" required>
-                </div>
-                <div >
-                    <label for="content">Enter the contents of the day's journal </label>
-                    <input type="text" name="content" id="content" required>
-                </div>
-                <div class="form-example">
-                    <input type="submit" value="Post!">
-                </div>
-            </form>
 
-            <hr>
+        <label for="datee">Enter the data: </label>
+        <input type="date" name="datee" id="datee" required>
+
+        <div>
+            <label for="content">Enter the contents of the day's journal </label>
+            <input type="text" name="content" id="content" required>
+        </div>
+
+        <div class="form-example">
+            <input type="submit" value="Post!">
+        </div>
+
             <form>
                 <fieldset>
                     <legend>Misc</legend>
@@ -89,6 +84,7 @@
                         <option value="Pancakes"> Pancakes </option>
                         <option value="Pizza"> Pizza </option>
                         <option value="Burger"> Burger </option>
+                        <option value="Burger"> Steak </option>
                     </select>
                     <br>
 
@@ -104,7 +100,8 @@
                     </datalist>
                 </fieldset>
             </form>
+        <footer>
+            <h3> Thanks for reading my journal </h3>
         </footer>
-
-    </main>
+    </body>
 </html>
