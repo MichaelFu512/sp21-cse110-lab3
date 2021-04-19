@@ -1,8 +1,10 @@
 
+/* background color */
 body {
     background-color: lightblue;
 }
 
+/* Font-style, text, color, margin, position */
 h1 {
     font-family: 'Orelega One', cursive;
     text-align:center;
@@ -12,17 +14,21 @@ h1 {
     position:static;
 }
 
+/* padding, margin */
 h2 {
     padding: 10px 10px 10px 10px;
     margin: auto;
 }
 
+/* Padding */
 h3 {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* border things, display, position, max-width */
 iframe {
     border-width: 5px;
     border-radius: 10px;
@@ -33,6 +39,7 @@ iframe {
     max-width: 500px;
 }
 
+/*margin, border-radius */
 img {
     border-radius: 10px;
     border-color:#000;
@@ -42,21 +49,17 @@ img {
     margin-bottom: 20px;
 }
 
+/* width, display */
 audio {
     width: 500px;
     display:inline-block;
-}
-
-@media(min-aspect-ratio: 1/1) {
-    iframe {
-        border-color: #FFF;
-    }
 }
 
 #disclaimer {
     font-size: 20px;
 }
 
+/* flexbox */
 .flex-container {
     font-size: 50px;
     display: flex;
@@ -66,23 +69,50 @@ audio {
   }
 
 /* Gotten from w3 school, made my own adjustments */
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 40px;
-    grid-template-rows: 100px 150px 200px;
-  }
-  .grid-item {
-    border: 1px solid yellow;
-    padding: 10px;
-    font-size: 20px;
-    justify-self:auto;
-  }
+/* grid part */
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: #2196F3;
+padding: 40px;
+grid-template-rows: 100px 150px 200px;
+}
 
-  @media only screen and (max-width: 800px) {
-      body {
-          background-color: yellow;
-      }
-  }
+.grid-item {
+border: 1px solid yellow;
+padding: 10px;
+font-size: 20px;
+justify-self:auto;
+}
 
+/* Responsiveness */
+@media only screen and (max-width: 800px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+/* Descendant combinator */
+ol li {
+    list-style-type: circle;
+}
+
+/* Child combinator */
+ul > li {
+    border-top: 10px solid green;
+}
+
+/* General sibling combinator */
+p ~ span {
+    c
+    olor:red;
+}
+/* Adjacent sibling combinator */
+div:first-of-type + div {
+    color: red;
+}
+
+/* Combining Two Selectors */
+p.c9 {
+    font-size: 50px;
+}
