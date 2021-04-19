@@ -2,3 +2,31 @@
 body {
     background-color: lightblue;
 }
+
+h1 {
+    text-align:center;
+    text-decoration:underline;
+    color: #000;
+    margin: 10px 20px 20px 10px;
+}
+
+h2 {
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+}
+
+h3 {
+    padding-top: 10px;
+}
+iframe {
+    border-width: 5px;
+    border-radius: 10px;
+    border-style:dashed;
+    border-color: rgb(0, 0, 255);
+}
+
+img {
+    border-radius: 10px;
+    border-color:#000;
+    margin-bottom: 20px;
+}
