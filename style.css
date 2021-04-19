@@ -4,10 +4,12 @@ body {
 }
 
 h1 {
+    font-family: 'Orelega One', cursive;
     text-align:center;
     text-decoration:underline;
     color: #000;
     margin: 10px 20px 20px 10px;
+    position:static;
 }
 
 h2 {
@@ -17,16 +19,69 @@ h2 {
 
 h3 {
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 iframe {
     border-width: 5px;
     border-radius: 10px;
     border-style:dashed;
     border-color: rgb(0, 0, 255);
+    display:block;
+    position:relative;
+    max-width: 500px;
 }
 
 img {
     border-radius: 10px;
     border-color:#000;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 20px;
 }
+
+audio {
+    width: 500px;
+    display:inline-block;
+}
+
+@media(min-aspect-ratio: 1/1) {
+    iframe {
+        border-color: #FFF;
+    }
+}
+
+#disclaimer {
+    font-size: 20px;
+}
+
+.flex-container {
+    font-size: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/* Gotten from w3 school, made my own adjustments */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 40px;
+    grid-template-rows: 100px 150px 200px;
+  }
+  .grid-item {
+    border: 1px solid yellow;
+    padding: 10px;
+    font-size: 20px;
+    justify-self:auto;
+  }
+
+  @media only screen and (max-width: 800px) {
+      body {
+          background-color: yellow;
+      }
+  }
