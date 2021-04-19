@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <style>
+            button:hover {
+                background-color: lightblue;
+            }
+        </style>
         <meta charset="utf-8" />
         <title> Michael's journal</title>
         <link rel = "stylesheet" href="style.css">
         <link rel="icon" href = "https://www.clipartmax.com/png/middle/173-1736801_favicon-logo.png">
+
     </head>
 
     <body>
@@ -14,23 +20,42 @@
         <main>
         </main>
             <section>
-                <div>
+                <div id="friday">
                     <h2> 4/09/2021 Friday </h2>
                     <p> Today I watched a video where the <strong>  Pillow man </strong> duels kids with <b> epic </b> music </p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/fet2BHtWBsk" 
                     title="YouTube video player">
                     </iframe>
-                    <ol>
+                    <ol id="disclaimer">
                         <li> Don't worry, no one was hurt in that video </li>
                         <li> They cut out the part where the kids were bullying another kid before pillow man came to the rescue </li>
                     </ol>
+                </div>
+
+                <p> Grid example </p>
+                <div class="grid-container">
+                    <div class="grid-item">123</div>
+                    <div class="grid-item">456</div>
+                    <div class="grid-item">789</div>
+                    <div class="grid-item">101112</div>
+                    <div class="grid-item">131415</div>
+                    <div class="grid-item">161718</div>
+                    <div class="grid-item">192021</div>
+                    <div class="grid-item">222324</div>
+                    <div class="grid-item">252627</div>
+                <!---
+                    <div class="grid-item">a b c d e f  </div>
+                    <div class="grid-item">g h i j k l    </div>
+                    <div class="grid-item">m n o p q r  </div>
+                    <div class="grid-item">s t u v w x y z</div>
+                    -->
                 </div>
             </section>
 
             <hr>
 
                 <h2> 4/10/2021 Saturday </h2>
-                <p> I got <em> Rick Rolled </em> by my <span></span> <i> friend </i> </p>
+                <p style="color:blue"> I got <em> Rick Rolled </em> by my <span></span> <i> friend </i> </p>
                 <audio controls>
                     <source src = "https://demo.twilio.com/docs/classic.mp3">
                 </audio>
@@ -40,6 +65,12 @@
                         <li> <a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ"> But also click here </a> </li>
                     </ul>
                 </nav>
+                <p> Flex container example </p>
+                    <div class="flex-container">
+                        <div> 0 1 2 3 4 5 6 </div>
+                        <div> 7 8 9 10 11 12|</div>
+                        <div> 13 14 15 16 17|</div>
+                    </div>
 
             <hr>
 
@@ -59,7 +90,7 @@
                 </details>
             </section>
 
-        <label for="datee">Enter the data: </label>
+        <label for="datee">Enter the date: </label>
         <input type="date" name="datee" id="datee" required>
 
         <div>
